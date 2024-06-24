@@ -11,23 +11,28 @@
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
+            position: relative;
+            
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            
         }
         .footer {
             background: #333;
-            color: #ffffff;
+            color: #aaaaaa;
             padding: 10px 0;
             text-align: center;
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 90%;
         }
         .header {
             text-align: center;
+            position: relative;
         }
         .back-button {
             position: absolute;
@@ -49,46 +54,90 @@
             object-fit: cover;
         }
         .content {
-            background: #ffffff;
-            padding: 50px;
+            background: linear-gradient(to top left, #ff75c390 0%, #ffa64790 15%, #ffe93f90 35%, #9fff5b90 55%, #70e2ff90 75%, #cd93ff90 100%);
+            padding: 10px;
             margin-top: 10px;
             border-radius: 40px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             font-size: 20px;
+            position: relative;
+
+            
         }
         h1 {
-            color: #333;
+            font-size: 50px;
+            color: #ffffff;
+            
+            background: linear-gradient(to right, #FF75C3 40%, #FFA647 45%, #FFE83F 50%, #9FFF5B 55%, #70E2FF 60%, #CD93FF 65%);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+            text-shadow: white 1px 1px 20px;
+
         }
         p {
-            color: #666;
+            color: #ffffff;
+            font-size: 22px;
+            text-shadow: black 1px 1px 10px;
         }
+        h2 {
+            color: #ffffff;
+            text-shadow: black 1px 2px 5px;
+        }
+
+        iframe {
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        position: fixed;
+        margin-top: -5%;
+        margin-left: -7%;
+        }
+        .profile-picture1{
+            position: absolute;
+            align-items: center;
+            margin-top: -7%;
+            margin-left: 3%;
+            width: 30%;
+        }
+        .profile-picture2{
+            position: absolute;
+            align-items: center;
+            margin-top: 13%;
+            margin-left: -55%;
+            width: 30%;
+        }
+
     </style>
 </head>
 <body>
-
+    
+    <div class="video">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FwIHSDiFye8?si=FGgWA85pEUSsdikr&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="header">
         <a href="index.html" class="back-button"><b>กลับ</b></a>
         <h1>โปรไฟล์ของฉัน</h1>
     </div>
-
     <div class="container">
         <div class="content">
             <img src="img/asd.jpg" alt="Profile Picture" class="profile-picture">
+            <img src="img/ddddd.gif" alt="Song Man" class="profile-picture1">
+            <img src="img/dd.gif" alt="camera man" class="profile-picture2">
             <h2>ชื่อ: นายพิริยกร พันธุ์พานิชย์</h2>
             <p>รหัสนักศึกษา: 653450098-0</p>
-            <p>อีเมลนักศึกษา: Phiriyakorn.p@kkumail.com</p>
+            <p>อีเมลนักศึกษา: phiriyakorn.p@kkumail.com</p>
             <p>สาขาวิชา: วิทยาการคอมพิวเตอร์และสารสนเทศ</p>
             <p>ผลงานนักศึกษาในวิชา Frontend และวิชา OOP: [ยังไม่มี]</p>
         </div>
     </div>
-
+    
     <div class="footer">
-        <p>&copy; Profile with HTML and CSS.
+        <p1>&copy; Profile with HTML and CSS.
             <br>
             IN403101 : Front-end Web Programming
-        </p>
+        </p1>
     </div>
-
+    
 </body>
 </html>

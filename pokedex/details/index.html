@@ -19,10 +19,12 @@
     <div class="container">
       <h1 id="name">Pokedex Lab</h1>
     </div>
+    
     <script>
       const urlParams = new URLSearchParams(window.location.search);
+      const name = urlParams.get("name");
       const id = urlParams.get("id");
-      console.log(id);
+      document.getElementById("name").innerText = name;
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

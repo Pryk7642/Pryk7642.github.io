@@ -24,9 +24,17 @@
         margin-bottom: 2rem;
         margin-top: 1rem;
       }
+      .go-back {
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+      
     </style>
   </head>
   <body>
+    <div class="go-back">
+      <button class="btn btn-primary" onclick="window.history.go(-1); return false;">ย้อนกลับ</button>
+    </div>
     <div class="container">
       <h1 id="ability-name"></h1>
       <div id="pokemon-list" class="row"></div>
